@@ -1,7 +1,7 @@
 # Practica_UT05_GoogleMaps
 Proyecto Android 
 
-### App Google Maps Version: 1.1.1
+### App Google Maps Version: 1.2.1
 
 
 <img src="https://github.com/Antonio1138/Practica_UT05_GoogleMaps/blob/master/location.png" width="250px" height="400px" />
@@ -12,7 +12,8 @@ Aplicación que nos permite marcar en el mapa mediante dos botones dos direccion
 - Localización del dispositivo
 - Localización del Centro Internacional Politécnico
 - Al hacer una pulsación larga nos permite crear un marcador.
-- Pulsando en cualquier otra parte del mapa se elemina el marcador
+- Cuando pulsamos en el botón "Go!" hace zoom hacia el marcador.
+- Pulsando en cualquier otra parte del mapa se elemina el marcador.
 
 ## Motivación
 La aplicación ha sido desarrollada para la práctica del Tema 5 de la asignatura Programación multimedia y dispositivos móviles.
