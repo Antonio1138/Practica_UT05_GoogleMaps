@@ -93,9 +93,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 new MarkerOptions().position(latLng).title(latLng.toString());
         mMap.addMarker(markerOptions);
 
+
+
+        Button marcador = findViewById(R.id.button_marcador);
+
+        //Zoom para el marcador
+
+        marcador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(markerOptions.getPosition(), 15f));
+            }
+        });
+
+
+        //Borra el marcador
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
             public void onMapClick(LatLng latLng) {
+
                 mMap.clear();
 
                 Toast.makeText(MapsActivity.this, "Marcador eliminado", Toast.LENGTH_SHORT).show();
