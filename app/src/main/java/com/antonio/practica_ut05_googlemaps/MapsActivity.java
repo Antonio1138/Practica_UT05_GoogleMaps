@@ -87,7 +87,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapLongClick(LatLng latLng) {
-        Toast.makeText(MapsActivity.this, "Tu nuevo marcador", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MapsActivity.this, "Tu marcador", Toast.LENGTH_SHORT).show();
 
         final MarkerOptions markerOptions =
                 new MarkerOptions().position(latLng).title(latLng.toString());
